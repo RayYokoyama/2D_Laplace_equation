@@ -6,7 +6,7 @@
 #include<iomanip>
 #include <sys/stat.h>
 
-class Laplas
+class Laplace
 {
     private:
         const int N=100;
@@ -20,7 +20,7 @@ class Laplas
         double sum;
         double memory;
     public:
-        Laplas(){
+        Laplace(){
             p.resize(N, std::vector<double>(N));
             p[N/2][N/2]=1.0;
             dt=0.01;
