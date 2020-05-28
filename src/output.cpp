@@ -13,7 +13,7 @@ void Laplas::Output(int count){
     output << "DATASET STRUCTURED_POINTS" << endl;
     output << "DIMENSIONS " << N << " " << N << " " << 1 << endl;
     output << "ORIGIN " << 0.0 << " " << 0.0 << " " << 0.0 << endl;
-    output << "SPACING " << dx << " " << dy << endl;
+    output << "SPACING " << dx << " " << dy << " " << 0 << endl;
     output << "POINT_DATA " << N*N << endl;
     output << "SCALARS " << "pressure " << "double" << endl;
     output << "LOOKUP_TABLE " << "default" << endl;
