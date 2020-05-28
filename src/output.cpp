@@ -10,7 +10,7 @@ void Laplas::Output(int count){
     }
 
     stringstream filename;
-    filename << "pressure" << count << ".vtp";
+    filename << "pressure" << count << ".vtk";
     string result = "../../output/"+filename.str();
     ofstream output;
     output.open(result.c_str());
