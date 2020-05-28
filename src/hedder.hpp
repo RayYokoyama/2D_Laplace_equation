@@ -3,6 +3,8 @@
 #include<fstream>
 #include<sstream>
 #include<cmath>
+#include <iomanip>
+
 class Laplas
 {
     private:
