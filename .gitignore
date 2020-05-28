@@ -1,5 +1,4 @@
 *.vtp
-build
 CMakeCache.txt
 2d_diff
 CMakeFiles
