@@ -1,7 +1,7 @@
 #include"hedder.hpp"
 using namespace std;
 
-void Laplas::Output(int count){
+void Laplace::Output(int count){
     struct stat st;
     const char* dir = "../../output";
     int ret = stat(dir, &st);
