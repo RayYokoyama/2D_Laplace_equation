@@ -3,7 +3,8 @@
 #include<fstream>
 #include<sstream>
 #include<cmath>
-#include <iomanip>
+#include<iomanip>
+#include <sys/stat.h>
 
 class Laplas
 {
@@ -22,7 +23,7 @@ class Laplas
         Laplas(){
             p.resize(N, std::vector<double>(N));
             p[N/2][N/2]=1.0;
-            dt=0.001;
+            dt=0.01;
             lx=100.0;
             ly=100.0;
             dx=lx/(N-1);
@@ -61,7 +62,7 @@ class Laplas
             }
             
             std:: cout << fabs(memory-sum) << std::endl;
-            if(double(fabs(memory-sum))<0.002){
+            if(double(fabs(memory-sum))<0.015){
                 return true;
             }
             else{
