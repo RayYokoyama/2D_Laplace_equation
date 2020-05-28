@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    Laplas DS;
+    Laplace DS;
     int count=0;
     while(1){
         DS.GaussZider();
