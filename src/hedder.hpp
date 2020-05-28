@@ -10,7 +10,7 @@ class Laplace
 {
     private:
         const int N=100;
-        std::vector<std::vector<double>> p;
+        std::vector<std::vector<double> > p;
         double dt;
         double lx;
         double ly;
